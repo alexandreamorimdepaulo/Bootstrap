@@ -1,0 +1,125 @@
+@import url(./bootstrap.min.css);
+
+:root {
+    --primary: #fc5185;
+    --secondary: #365f6b;
+    --light: #f0f0f0;
+    --medium: #cacaca;
+    --dark: #a2a2a2;
+}
+
+body, 
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header{
+    width: 100%;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+}
+
+#header.active{
+    position: fixed;
+    background: white;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+#header .navbar-collapse{
+    width: auto;
+}
+
+#header .nav-link{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-right: 0;
+    padding-left: 0;
+    color: #000000;
+    border-bottom: solid 4px transparent;
+}
+
+#header .nav-link:hover {
+    border-bottom: solid 4px var(--secondary);
+    color: var(--secondary);
+}
+
+#slider h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+.title{
+    text-transform: uppercase;
+
+}
+.subtitle{
+    color: var(--medium);
+    font-weight: 400;
+}
+
+.block{
+    margin-bottom: 120px;
+}
+
+.button{
+    font-weight: 500;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+@media(min-width: 992px){
+    #header .nav-link{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 992px) { 
+    #header .navbar-collapse{
+        width: 100%;
+    }
+ }
+
+ a{
+     color: rgb(0, 4, 245);
+ }
+
+ a:hover{
+     color: rgb(255, 0, 0);
+ }
+
+ #noticias a.destaque{
+     display: block;
+     background: var(--light);
+     border-radius: 5px;
+     text-align: center;
+     padding: 20px;
+     color: black;
+     text-decoration: none;
+     transition: all ease-out 0.2s;
+ }
+
+ #noticias a.destaque:hover{
+     background: white;
+     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.12);
+     transform: scale(1.05);
+ }
+
+#noticias a.destaque .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#noticias a.destaque .img-container{
+    max-height: 160px;
+}
+
